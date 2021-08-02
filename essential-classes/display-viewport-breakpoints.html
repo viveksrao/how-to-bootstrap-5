@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>
+      Display Viewport Breakpoints | Essential Classes | Bootstrap 5 Essential
+      Training
+    </title>
+  </head>
+  <body>
+    <main class="container mt-4 mb-4">
+      <h1>Display Viewport Breakpoints</h1>
+      <h3><code>d{-BR}-{VAL}</code></h3>
+      <p class="h5">
+        <code class="pe-2">none</code><code class="pe-2">sm</code
+        ><code class="pe-2">md</code><code class="pe-2">lg</code
+        ><code class="pe-2">xl</code><code class="pe-2">xxl</code>
+      </p>
+      <hr />
+      <h3>Show until Viewport</h3>
+      <div class="d-grid gap-2">
+        <span class="d-block d-sm-none bg-primary text-white p-2"
+          >Until xs</span
+        >
+        <span class="d-block d-md-none bg-success text-white p-2"
+          >Until md</span
+        >
+        <span class="d-block d-lg-none bg-danger text-white p-2">Until lg</span>
+        <span class="d-block d-xl-none bg-warning text-white p-2"
+          >Until xl</span
+        >
+        <span class="d-block d-xxl-none bg-info text-white p-2">Until xxl</span>
+      </div>
+      <hr />
+      <h3>Show after Viewport</h3>
+      <div class="d-grid gap-2">
+        <span class="d-none d-sm-block bg-primary text-white p-2"
+          >Only after xs</span
+        >
+        <span class="d-none d-md-block bg-success text-white p-2"
+          >Only after md</span
+        >
+        <span class="d-none d-lg-block bg-danger text-white p-2"
+          >Only after lg</span
+        >
+        <span class="d-none d-xl-block bg-warning text-white p-2"
+          >Only after xl</span
+        >
+        <span class="d-none d-xxl-block bg-info text-white p-2"
+          >Only after xxl</span
+        >
+      </div>
+      <hr />
+      <h3>Show ONLY in Viewport</h3>
+      <div class="d-grid gap-2">
+        <span class="d-block d-sm-none bg-secondary text-white p-2"
+          >Only on sm</span
+        >
+        <span class="d-none d-sm-block d-md-none bg-primary text-white p-2"
+          >Only on sm</span
+        >
+        <span class="d-none d-md-block d-lg-none bg-success text-white p-2"
+          >Only on md</span
+        >
+        <span class="d-none d-lg-block d-xl-none bg-danger text-white p-2"
+          >Only on lg</span
+        >
+        <span class="d-none d-xl-block d-xxl-none bg-warning text-white p-2"
+          >Only on xl</span
+        >
+        <span class="d-none d-xxl-block bg-info text-white p-2"
+          >Only on xxl</span
+        >
+      </div>
+      <h2>Visibility</h2>
+      <p class="h5">
+        <code class="pe-2">visible</code><code class="pe-2">invisible</code>
+      </p>
+      <h3>Invisible</h3>
+      <div class="d-flex">
+        <div class="bg-secondary text-white p-2">Netflix</div>
+        <div class="invisible bg-success text-white p-2">Amazon Prime</div>
+        <div class="bg-secondary text-white p-2">Hulu</div>
+        <div class="bg-secondary text-white p-2">Hotstar</div>
+        <div class="bg-secondary text-white p-2">Disney+</div>
+      </div>
+      <h2>Contextual Printing</h2>
+      <h3><code>d-print-{VAL}</code></h3>
+      <p class="h5">
+        <code class="pe-2">none</code><code class="pe-2">inline</code
+        ><code class="pe-2">inline-block</code><code class="pe-2">block</code
+        ><code class="pe-2">grid</code><code class="pe-2">table</code
+        ><code class="pe-2">table-cell</code><code class="pe-2">table-row</code
+        ><code class="pe-2">flex</code><code class="pe-2">inline-flex</code>
+      </p>
+      <div class="d-grid gap-2">
+        <span class="d-print-none bg-secondary text-white p-2"
+          >DON'T PRINT</span
+        >
+        <span class="d-none d-print-block bg-secondary text-white p-2"
+          >PRINT AS BLOCK</span
+        >
+        <span
+          class="d-none d-lg-block d-print-block bg-secondary text-white p-2"
+          >SHOW LARGE, PRINT BLOCK</span
+        >
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
